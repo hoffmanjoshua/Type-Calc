@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import Expression
 
 struct ContentView: View {
     
     @State var currentText = ""
-    @State var previous: [String] = ["5 + 1", "6 x 3"]
+    @State var previous: [Solution] = []
     
     var body: some View {
         VStack {
@@ -18,12 +19,14 @@ struct ContentView: View {
             VStack (spacing: 1) {
                 ScrollView {
                     VStack {
-                        ForEach(previous.reversed(), id: \.self) { row in
+                        ForEach(previous.reversed(), id: \.id) { row in
                             VStack {
                                 Divider()
                                 HStack {
-                                    Text(row)
+                                    Text(row.expression)
+                                        .foregroundColor(Color(UIColor.systemGray))
                                     Spacer()
+                                    Text(row.result ?? "Invalid")
                                 }
                                 .padding(.horizontal)
                                 .padding(.vertical, 5)
@@ -38,7 +41,9 @@ struct ContentView: View {
                 Rectangle()
                     .foregroundColor(.clear)
                     .background(LinearGradient(gradient:  Gradient(colors: [Color(#colorLiteral(red: 0.3307953775, green: 0.2530574799, blue: 1, alpha: 1)), Color(#colorLiteral(red: 0.09580274671, green: 0.3324514627, blue: 0.9993233085, alpha: 1))]), startPoint: .top, endPoint: .bottom))
-                    .frame(height: 30)
+                    .cornerRadius(5)
+                    .padding(.horizontal, 5)
+                    .frame(height: 7)
                     .shadow(radius: 20)
                 Rectangle()
                     .fill(Color(UIColor.systemBackground))
@@ -46,15 +51,28 @@ struct ContentView: View {
                     .padding(0)
                     .overlay(
                         TextField("5 + 4", text: $currentText, onCommit: {
-                            previous.append(currentText)
+                            let expression = Expression(currentText)
+                            var result = ""
+                            do {
+                                let numResult = try expression.evaluate()
+                                let formatter = NumberFormatter()
+                                formatter.minimumFractionDigits = 0
+                                formatter.maximumFractionDigits = 2
+                                result = formatter.string(from: NSNumber(value: numResult)) ?? ""
+                            }
+                            catch {
+                                result = "Invalid"
+                            }
+                            previous.append(Solution(expression: currentText, result: String(result)))
                             currentText = ""
                         })
                             .padding(.horizontal, 10)
-                        .font(.system(size: 30, design: .serif))
+                        .font(.system(size: 30))
                     )
             }
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

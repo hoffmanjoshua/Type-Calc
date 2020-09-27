@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4204C0F4252116DF0004DB27 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4204C0F3252116DF0004DB27 /* Solution.swift */; };
+		4204C0F5252116DF0004DB27 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4204C0F3252116DF0004DB27 /* Solution.swift */; };
 		4290C6DC2520484B005B1BC7 /* Type_CalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4290C6C92520484A005B1BC7 /* Type_CalcApp.swift */; };
 		4290C6DD2520484B005B1BC7 /* Type_CalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4290C6C92520484A005B1BC7 /* Type_CalcApp.swift */; };
 		4290C6DE2520484B005B1BC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4290C6CA2520484A005B1BC7 /* ContentView.swift */; };
 		4290C6DF2520484B005B1BC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4290C6CA2520484A005B1BC7 /* ContentView.swift */; };
 		4290C6E02520484B005B1BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4290C6CB2520484B005B1BC7 /* Assets.xcassets */; };
 		4290C6E12520484B005B1BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4290C6CB2520484B005B1BC7 /* Assets.xcassets */; };
+		42B46B2825213D9300F12721 /* Expression in Frameworks */ = {isa = PBXBuildFile; productRef = 42B46B2725213D9300F12721 /* Expression */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4204C0F3252116DF0004DB27 /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
 		4290C6C92520484A005B1BC7 /* Type_CalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type_CalcApp.swift; sourceTree = "<group>"; };
 		4290C6CA2520484A005B1BC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4290C6CB2520484B005B1BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B46B2825213D9300F12721 /* Expression in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +64,7 @@
 			children = (
 				4290C6C92520484A005B1BC7 /* Type_CalcApp.swift */,
 				4290C6CA2520484A005B1BC7 /* ContentView.swift */,
+				4204C0F3252116DF0004DB27 /* Solution.swift */,
 				4290C6CB2520484B005B1BC7 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -106,6 +112,9 @@
 			dependencies = (
 			);
 			name = "Type-Calc (iOS)";
+			packageProductDependencies = (
+				42B46B2725213D9300F12721 /* Expression */,
+			);
 			productName = "Type-Calc (iOS)";
 			productReference = 4290C6D02520484B005B1BC7 /* Type-Calc.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +162,9 @@
 				Base,
 			);
 			mainGroup = 4290C6C32520484A005B1BC7;
+			packageReferences = (
+				42B46B2625213D9300F12721 /* XCRemoteSwiftPackageReference "Expression" */,
+			);
 			productRefGroup = 4290C6D12520484B005B1BC7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -189,6 +201,7 @@
 			files = (
 				4290C6DE2520484B005B1BC7 /* ContentView.swift in Sources */,
 				4290C6DC2520484B005B1BC7 /* Type_CalcApp.swift in Sources */,
+				4204C0F4252116DF0004DB27 /* Solution.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +211,7 @@
 			files = (
 				4290C6DF2520484B005B1BC7 /* ContentView.swift in Sources */,
 				4290C6DD2520484B005B1BC7 /* Type_CalcApp.swift in Sources */,
+				4204C0F5252116DF0004DB27 /* Solution.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +269,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -308,6 +324,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -376,7 +394,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hoffmanjoshua.Type-Calc";
 				PRODUCT_NAME = "Type-Calc";
 				SDKROOT = macosx;
@@ -400,7 +418,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hoffmanjoshua.Type-Calc";
 				PRODUCT_NAME = "Type-Calc";
 				SDKROOT = macosx;
@@ -439,6 +457,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42B46B2625213D9300F12721 /* XCRemoteSwiftPackageReference "Expression" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nicklockwood/Expression.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.13.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42B46B2725213D9300F12721 /* Expression */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42B46B2625213D9300F12721 /* XCRemoteSwiftPackageReference "Expression" */;
+			productName = Expression;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4290C6C42520484A005B1BC7 /* Project object */;
 }
