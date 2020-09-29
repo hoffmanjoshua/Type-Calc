@@ -11,6 +11,7 @@
 		42048A072521993B00D7FE48 /* HelpSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42048A062521993B00D7FE48 /* HelpSheetView.swift */; };
 		42048A0C2521996700D7FE48 /* TextCopiedModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42048A0B2521996700D7FE48 /* TextCopiedModalView.swift */; };
 		4204C0F4252116DF0004DB27 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4204C0F3252116DF0004DB27 /* Solution.swift */; };
+		427B1F3F2523B11600313305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4290C6CB2520484B005B1BC7 /* Assets.xcassets */; };
 		4290C6DC2520484B005B1BC7 /* Type_CalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4290C6C92520484A005B1BC7 /* Type_CalcApp.swift */; };
 		4290C6DE2520484B005B1BC7 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4290C6CA2520484A005B1BC7 /* CalculatorView.swift */; };
 		4290C6E02520484B005B1BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4290C6CB2520484B005B1BC7 /* Assets.xcassets */; };
@@ -257,6 +258,7 @@
 			files = (
 				42A920D525239C6900CA3502 /* Main.storyboard in Resources */,
 				42A920D225239C6900CA3502 /* Preview Assets.xcassets in Resources */,
+				427B1F3F2523B11600313305 /* Assets.xcassets in Resources */,
 				42A920CF25239C6900CA3502 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
