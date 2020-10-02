@@ -32,13 +32,19 @@ struct CalculatorView: View {
                                         Text(row.expression)
                                             .foregroundColor(Color(NSColor.systemGray))
                                         Spacer()
-                                        Text(row.result ?? "Invalid")
-                                            .contentShape(Rectangle())
-                                            .onTapGesture(count: 1) {
-                                                let pasteboard = NSPasteboard.general
-                                                pasteboard.clearContents()
-                                                pasteboard.setString(row.result!, forType: .string)
-                                            }
+                                        Button(action: {
+                                            print(row.result ?? "")
+                                            print("Clicked")
+                                            let pasteboard = NSPasteboard.general
+                                            pasteboard.clearContents()
+                                            pasteboard.setString(row.result!, forType: .string)
+                                        }, label: {
+                                            Text(row.result ?? "Invalid")
+                                                .padding(2)
+                                                .contentShape(Rectangle())
+                                        })
+                                        .tooltip("Click to Copy")
+                                        .buttonStyle(BorderlessButtonStyle())
                                     }
                                     .padding(.horizontal)
                                     .padding(.vertical, 5)
