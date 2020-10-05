@@ -11,6 +11,13 @@
 		42048A072521993B00D7FE48 /* HelpSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42048A062521993B00D7FE48 /* HelpSheetView.swift */; };
 		42048A0C2521996700D7FE48 /* TextCopiedModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42048A0B2521996700D7FE48 /* TextCopiedModalView.swift */; };
 		4204C0F4252116DF0004DB27 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4204C0F3252116DF0004DB27 /* Solution.swift */; };
+		42275CD2252AD8CC00E137F1 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42275CD1252AD8CC00E137F1 /* WidgetKit.framework */; };
+		42275CD4252AD8CC00E137F1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42275CD3252AD8CC00E137F1 /* SwiftUI.framework */; };
+		42275CD7252AD8CC00E137F1 /* Type_Calc_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42275CD6252AD8CC00E137F1 /* Type_Calc_Widget.swift */; };
+		42275CDA252AD8CD00E137F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42275CD9252AD8CD00E137F1 /* Assets.xcassets */; };
+		42275CDC252AD8CD00E137F1 /* Type_Calc_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 42275CD8252AD8CC00E137F1 /* Type_Calc_Widget.intentdefinition */; };
+		42275CDD252AD8CD00E137F1 /* Type_Calc_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 42275CD8252AD8CC00E137F1 /* Type_Calc_Widget.intentdefinition */; };
+		42275CE0252AD8CD00E137F1 /* Type Calc WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 42275CD0252AD8CC00E137F1 /* Type Calc WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		427B1F3F2523B11600313305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4290C6CB2520484B005B1BC7 /* Assets.xcassets */; };
 		4290C6DC2520484B005B1BC7 /* Type_CalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4290C6C92520484A005B1BC7 /* Type_CalcApp.swift */; };
 		4290C6DE2520484B005B1BC7 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4290C6CA2520484A005B1BC7 /* CalculatorView.swift */; };
@@ -27,11 +34,42 @@
 		42B46B2825213D9300F12721 /* Expression in Frameworks */ = {isa = PBXBuildFile; productRef = 42B46B2725213D9300F12721 /* Expression */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		42275CDE252AD8CD00E137F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4290C6C42520484A005B1BC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42275CCF252AD8CC00E137F1;
+			remoteInfo = "Type Calc WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42275CE1252AD8CD00E137F1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				42275CE0252AD8CD00E137F1 /* Type Calc WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		42048A01252198F100D7FE48 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		42048A062521993B00D7FE48 /* HelpSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSheetView.swift; sourceTree = "<group>"; };
 		42048A0B2521996700D7FE48 /* TextCopiedModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCopiedModalView.swift; sourceTree = "<group>"; };
 		4204C0F3252116DF0004DB27 /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
+		42275CD0252AD8CC00E137F1 /* Type Calc WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Type Calc WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42275CD1252AD8CC00E137F1 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = Library/Frameworks/WidgetKit.framework; sourceTree = DEVELOPER_DIR; };
+		42275CD3252AD8CC00E137F1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		42275CD6252AD8CC00E137F1 /* Type_Calc_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type_Calc_Widget.swift; sourceTree = "<group>"; };
+		42275CD8252AD8CC00E137F1 /* Type_Calc_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Type_Calc_Widget.intentdefinition; sourceTree = "<group>"; };
+		42275CD9252AD8CD00E137F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42275CDB252AD8CD00E137F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4290C6C92520484A005B1BC7 /* Type_CalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type_CalcApp.swift; sourceTree = "<group>"; };
 		4290C6CA2520484A005B1BC7 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		4290C6CB2520484B005B1BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +90,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		42275CCD252AD8CC00E137F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42275CD4252AD8CC00E137F1 /* SwiftUI.framework in Frameworks */,
+				42275CD2252AD8CC00E137F1 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4290C6CD2520484B005B1BC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,6 +129,17 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		42275CD5252AD8CC00E137F1 /* Type Calc Widget */ = {
+			isa = PBXGroup;
+			children = (
+				42275CD6252AD8CC00E137F1 /* Type_Calc_Widget.swift */,
+				42275CD8252AD8CC00E137F1 /* Type_Calc_Widget.intentdefinition */,
+				42275CD9252AD8CD00E137F1 /* Assets.xcassets */,
+				42275CDB252AD8CD00E137F1 /* Info.plist */,
+			);
+			path = "Type Calc Widget";
+			sourceTree = "<group>";
+		};
 		4290C6C32520484A005B1BC7 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +147,7 @@
 				4290C6D22520484B005B1BC7 /* iOS */,
 				4290C6D92520484B005B1BC7 /* macOS */,
 				42A920C925239C6700CA3502 /* Type Calc */,
+				42275CD5252AD8CC00E137F1 /* Type Calc Widget */,
 				4290C6D12520484B005B1BC7 /* Products */,
 				42A920EF2523A6CA00CA3502 /* Frameworks */,
 			);
@@ -111,6 +170,7 @@
 			children = (
 				4290C6D02520484B005B1BC7 /* Type-Calc.app */,
 				42A920C825239C6700CA3502 /* Type Calc.app */,
+				42275CD0252AD8CC00E137F1 /* Type Calc WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				42A920F02523A6CB00CA3502 /* CoreServices.framework */,
+				42275CD1252AD8CC00E137F1 /* WidgetKit.framework */,
+				42275CD3252AD8CC00E137F1 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,6 +228,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		42275CCF252AD8CC00E137F1 /* Type Calc WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42275CE4252AD8CD00E137F1 /* Build configuration list for PBXNativeTarget "Type Calc WidgetExtension" */;
+			buildPhases = (
+				42275CCC252AD8CC00E137F1 /* Sources */,
+				42275CCD252AD8CC00E137F1 /* Frameworks */,
+				42275CCE252AD8CC00E137F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Type Calc WidgetExtension";
+			productName = "Type Calc WidgetExtension";
+			productReference = 42275CD0252AD8CC00E137F1 /* Type Calc WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4290C6CF2520484B005B1BC7 /* Type-Calc (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4290C6E42520484B005B1BC7 /* Build configuration list for PBXNativeTarget "Type-Calc (iOS)" */;
@@ -173,10 +252,12 @@
 				4290C6CC2520484B005B1BC7 /* Sources */,
 				4290C6CD2520484B005B1BC7 /* Frameworks */,
 				4290C6CE2520484B005B1BC7 /* Resources */,
+				42275CE1252AD8CD00E137F1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				42275CDF252AD8CD00E137F1 /* PBXTargetDependency */,
 			);
 			name = "Type-Calc (iOS)";
 			packageProductDependencies = (
@@ -216,6 +297,9 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					42275CCF252AD8CC00E137F1 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
 					4290C6CF2520484B005B1BC7 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -242,11 +326,20 @@
 			targets = (
 				4290C6CF2520484B005B1BC7 /* Type-Calc (iOS) */,
 				42A920C725239C6700CA3502 /* Type Calc */,
+				42275CCF252AD8CC00E137F1 /* Type Calc WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		42275CCE252AD8CC00E137F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42275CDA252AD8CD00E137F1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4290C6CE2520484B005B1BC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +362,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		42275CCC252AD8CC00E137F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42275CD7252AD8CC00E137F1 /* Type_Calc_Widget.swift in Sources */,
+				42275CDC252AD8CD00E137F1 /* Type_Calc_Widget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4290C6CC2520484B005B1BC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,6 +379,7 @@
 				4290C6DC2520484B005B1BC7 /* Type_CalcApp.swift in Sources */,
 				4204C0F4252116DF0004DB27 /* Solution.swift in Sources */,
 				42048A0C2521996700D7FE48 /* TextCopiedModalView.swift in Sources */,
+				42275CDD252AD8CD00E137F1 /* Type_Calc_Widget.intentdefinition in Sources */,
 				42048A072521993B00D7FE48 /* HelpSheetView.swift in Sources */,
 				42048A02252198F100D7FE48 /* LaunchScreenView.swift in Sources */,
 			);
@@ -296,6 +399,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		42275CDF252AD8CD00E137F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42275CCF252AD8CC00E137F1 /* Type Calc WidgetExtension */;
+			targetProxy = 42275CDE252AD8CD00E137F1 /* PBXContainerItemProxy */;
+		};
 		42A920DF25239CB400CA3502 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 42A920DE25239CB400CA3502 /* Expression */;
@@ -314,6 +422,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		42275CE2252AD8CD00E137F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4476638AE3;
+				INFOPLIST_FILE = "Type Calc Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoffmanjoshua.Type-Calc.Type-Calc-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42275CE3252AD8CD00E137F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4476638AE3;
+				INFOPLIST_FILE = "Type Calc Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoffmanjoshua.Type-Calc.Type-Calc-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		4290C6E22520484B005B1BC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -432,6 +585,7 @@
 		4290C6E52520484B005B1BC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +608,7 @@
 		4290C6E62520484B005B1BC7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +684,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		42275CE4252AD8CD00E137F1 /* Build configuration list for PBXNativeTarget "Type Calc WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42275CE2252AD8CD00E137F1 /* Debug */,
+				42275CE3252AD8CD00E137F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4290C6C72520484A005B1BC7 /* Build configuration list for PBXProject "Type-Calc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
